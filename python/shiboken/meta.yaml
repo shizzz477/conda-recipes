@@ -5,7 +5,7 @@ package:
 source:
   fn: shiboken-1.2.2.tar.bz2
   md5: 9f5bee9d414ce51be07ff7a20054a48d
-  url: http://download.qt-project.org/official_releases/pyside/shiboken-1.2.2.tar.bz2
+  url: http://download.qt.io/official_releases/pyside/shiboken-1.2.2.tar.bz2
 
 requirements:
   build:
@@ -17,7 +17,7 @@ requirements:
     - python
 
 build:
-  number: 0
+  number: 1
 
 #test:
 #  commands:
