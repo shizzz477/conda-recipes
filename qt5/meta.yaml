@@ -1,47 +1,44 @@
 package:
   name: qt5
-  version: 5.6.0
+  version: 5.9.1
 
 source:
-  fn:   qt-everywhere-opensource-src-5.6.0.tar.xz                                                               [unix]
-  url:  http://download.qt.io/official_releases/qt/5.6/5.6.0/single/qt-everywhere-opensource-src-5.6.0.tar.xz   [unix]
-  md5:  47763c168f58b1196271b231f03c8bae                                                                        [unix]
-  fn:   qt-everywhere-opensource-src-5.6.0.zip                                                                  [win]
-  url:  http://download.qt.io/official_releases/qt/5.6/5.6.0/single/qt-everywhere-opensource-src-5.6.0.zip      [win]
-  md5:  03402708f260dcc917abae9bc559c1df                                                                        [win]
+  fn:   qt-everywhere-opensource-src-5.9.1.tar.xz
+  url:  http://download.qt.io/official_releases/qt/5.9/5.9.1/single/qt-everywhere-opensource-src-5.9.1.tar.xz
+  md5:  77b4af61c49a09833d4df824c806acaf
 
 build:
   detect_binary_files_with_prefix: true
 
 requirements:
   build:
-    - icu           54*
+    - icu           
     - python
-    - jom                         [win]
-    - libpng        1.6*          [unix]
+    - libpng        
     - jpeg                        [unix]
     - zlib                        [unix]
     - xz                          [unix]
     - bison                       [linux]
     - flex                        [linux]
     - fontconfig                  [linux]
-    - gst-plugins-base   1.8*     [linux]
+    - gst-plugins-base 
     - libxcb                      [linux]
     - gcc                         [linux]
     - freetype                    [linux]
     - openssl                     [linux]
 
   run:
-    - icu           54*
+    - icu          
     - zlib                        [unix]
-    - libpng        1.6*          [unix]
+    - libpng        
     - jpeg                        [unix]
     - fontconfig                  [linux]
-    - gst-plugins-base   1.8*     [linux]
+    - gst-plugins-base   
     - libxcb                      [linux]
     - libgcc                      [linux]
     - freetype                    [linux]
     - openssl                     [linux]
+    - xz
 
 about:
     home: http://www.qt.io
